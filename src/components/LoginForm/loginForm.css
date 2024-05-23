@@ -1,0 +1,97 @@
+.loginForm{
+    background-color: #313338;
+    width: 40vw ;
+    height: 40vh;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    border-radius: 3px;
+}
+
+/* ASIDE */
+.loginForm__user{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1vh;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+/* INPUT */
+.loginForm__input{
+    padding: 10px;
+    background-color: #1E1F22;
+    border: none;
+    color: white;
+}
+
+/* HEADER */
+.loginForm__title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #F1F2F4;
+    text-align: center;
+}
+.loginForm__subtitle{
+    color: #8A8E94;
+    text-align: center;
+}
+
+/* FORM */
+.loginForm h3{
+    color: #AEB2B9;
+    font-size: 12px;
+}
+h3 span{
+    color: red;
+}
+
+/* LINK */
+.loginForm__link{
+    color: #059CE8;
+    font-size: 14px;
+}
+.btn{
+    padding: 10px 16px;
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    transition: all ease-in-out .2s;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #414aac;
+}
+.loginForm__register{
+    color: #AEB2B9;
+    font-size: 14px;
+}
+
+.loginForm__qrcode{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.loginForm__qrcode__img{
+    width: 50%;
+    align-self: center;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.loginForm__qrcode__header{
+    color: #F1F2F4;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.loginForm__qrcode__text{
+    color: #AEB2B9;
+    font-size: 16px;
+}
+.loginForm__qrcode__text__span{
+    color: #F1F2F4;
+    font-size: 16px;
+}
