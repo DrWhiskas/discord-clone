@@ -1,0 +1,28 @@
+.servers{
+    background-color: #1E1F22;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servers__discord{
+    background-color: #35373C;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    transition: all ease-in-out .2s;
+}
+.servers__discord__logo{
+    color: white;
+    font-size: 25px;
+}
+.servers__discord:hover{
+    background-color: #5865F2;
+    border-radius: 20px;
+    cursor: pointer;
+}
+ 
