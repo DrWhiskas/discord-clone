@@ -1,0 +1,17 @@
+[
+	{
+        "id": "0",
+		"name": "Suno",
+		"logo": "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/gflnhgzhx7iiqhpceraa"
+	},
+	{
+		"id": "1",
+		"name": "Live Music",
+		"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+	},
+	{
+		"id": "2",
+		"name": "KpopTV",
+		"logo": "https://cdn-icons-png.flaticon.com/512/10833/10833101.png"
+	}
+]
