@@ -16,13 +16,21 @@ interface Channel {
 export default function Channels({ serverId }: ChannelProps) {
 	//test
 	const [selectedServerId, setSlectedServerId] = useState('') || null;
-	const [isTextListOpen, isTextListOpen] = useState(false)
+	const [isTextListOpen, setisTextListOpen] = useState(false);
+	const [isAudioListOpen, setisAudioListOpen] = useState(false);
+
+	function switchAudio() {
+		setisAudioListOpen(!isAudioListOpen);
+	}
+	function switchText() {
+		setisTextListOpen(!isTextListOpen);
+	}
 
 	const server = data.find((server) => server.id === serverId);
 
-    if(!server){
-        return null
-    }
+	if (!server) {
+		return null;
+	}
 
 	const channels: Channel[] = [
 		{ id: 1, name: 'General', type: 'text' },
@@ -40,40 +48,47 @@ export default function Channels({ serverId }: ChannelProps) {
 			<div className="channels__event">Events</div>
 			<div className="channels__content">
 				<div className="channels__content__item text">
-					<div className="channels__content__item__header">
+					<div className="channels__content__item__header" onClick={switchText}>
 						<span>
 							<ChevronDown />
 							TEXT CHANNELS
 						</span>
 						<Plus />
 					</div>
-					<ul className="channels__content__item__list">
-						{channels.map((channel) => (
-							<ChannelItem
-								key={channel.id}
-								serverId={serverId}
-								channel={channel}
-							/>
-						))}
-					</ul>
+					{isTextListOpen && (
+						<ul className="channels__content__item__list">
+							{channels.map((channel) => (
+								<ChannelItem
+									key={channel.id}
+									serverId={serverId}
+									channel={channel}
+								/>
+							))}
+						</ul>
+					)}
 				</div>
 				<div className="channels__content__item voice">
-					<div className="channels__content__item__header">
+					<div
+						className="channels__content__item__header"
+						onClick={switchAudio}
+					>
 						<span>
 							<ChevronDown />
 							VOICE CHANNELS
 						</span>
 						<Plus />
 					</div>
-					<ul>
-						{channels.map((channel) => (
-							<ChannelItem
-								key={channel.id}
-								serverId={serverId}
-								channel={channel}
-							/>
-						))}
-					</ul>
+					{isAudioListOpen && (
+						<ul>
+							{channels.map((channel) => (
+								<ChannelItem
+									key={channel.id}
+									serverId={serverId}
+									channel={channel}
+								/>
+							))}
+						</ul>
+					)}
 				</div>
 			</div>
 		</section>
