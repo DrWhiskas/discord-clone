@@ -3,6 +3,7 @@
     height: 100vh;
     overflow-y: scroll;
     width: 5vw;
+    min-width: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;

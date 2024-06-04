@@ -15,10 +15,8 @@ interface ChannelItemProps {
 
 export default function ChannelItem({serverId, channel }: ChannelItemProps) {
 	return (
-		<article className="channel-Item">
-			<li>
-				<span>{channel.name}</span>
-			</li>
+		<article className="channel-item">
+			<li className="channel-item__item">{channel.name}</li>
 		</article>
 	);
 }

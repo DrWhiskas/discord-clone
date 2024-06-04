@@ -16,6 +16,7 @@ interface Channel {
 export default function Channels({ serverId }: ChannelProps) {
 	//test
 	const [selectedServerId, setSlectedServerId] = useState('') || null;
+	const [isTextListOpen, isTextListOpen] = useState(false)
 
 	const server = data.find((server) => server.id === serverId);
 
@@ -46,7 +47,7 @@ export default function Channels({ serverId }: ChannelProps) {
 						</span>
 						<Plus />
 					</div>
-					<ul>
+					<ul className="channels__content__item__list">
 						{channels.map((channel) => (
 							<ChannelItem
 								key={channel.id}

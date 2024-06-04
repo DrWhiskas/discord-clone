@@ -2,6 +2,7 @@
     background-color: #2B2D31;
     height: 100vh;
     width: 12vw;
+    min-width: 200px;
     position: relative;
 }
 .channels__info{

@@ -2,3 +2,12 @@
     display: flex;
     margin: .8rem;
 }
+.channel-item__item{
+    transition: all ease-in-out .2s;
+    padding: 5px;
+    border-radius: 10px;
+}
+.channel-item__item:hover{
+    color: white;
+    background-color: rgb(116, 116, 116);
+}
